@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div class="border-bottom text-center">
+    <h1>קורות חיים</h1>
+</div>
+
+<div class="container">
+
+    <div class="profile mb-4 text-center">
+        <div class="my-4">
+            <img src="/assets/profile.jpg" class="shadow img-raised rounded-circle img-fluid" />
+        </div>
+        <h2 class="fw-bolder">מאיר אלבז</h2>
+        <p class="lead text-secondary">{{ site.about_me }}</p>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="mx-1">
+                <a href="https://github.com/meirdev" class="text-dark"><i class="bi bi-github"></i></a>
+            </div>
+            <div class="mx-1">
+                <a href="https://meirdev.wordpress.com" class="text-dark"><i class="bi bi-wordpress"></i></a>
+            </div>
+            <div class="mx-1 px-2 border rounded-pill">
+                <span class="contact">maornet@gmail.com</span>
+                <span class="d-inline-block"><i class="bi bi-envelope"></i></span>
+            </div>
+            <div class="mx-1 px-2 border rounded-pill">
+                <span>053-9630263</span>
+                <span class="d-inline-block"><i class="bi bi-telephone"></i></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-muted">
+        <hr>
+    </div>
+
+    <div class="mb-4">
+        <h3 class="mb-2 fw-bold">ניסיון תעסוקתי</h3>
+        <ul class="list-unstyled">
+            {%- for item in site.work_experience -%}
+            <li class="mb-4">
+                {% assign title = "" | split: "" %}
+                <h4 class="fw-semibold">{{ item.years }}: {{ title | push: item.title | push: item.institution_name | push: item.location | join: ", " }}</h4>
+                <p class="lead text-secondary">{{ item.intro }}</p>
+                <ul>
+                    {%- for info in item.more_info -%}
+                    <li>{{ info }}</li>
+                    {%- endfor -%}
+                </ul>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+
+    <div class="mb-4">
+        <h3 class="mb-2 fw-bold">לימודים מחשבים</h3>
+        <ul class="list-unstyled">
+            {%- for item in site.education.computers -%}
+            <li class="mb-4">
+                {% assign title = "" | split: "" %}
+                <h4 class="fw-semibold">{{ item.years }}: {{ title | push: item.title | push: item.institution_name | push: item.location | join: ", " }}</h4>
+                <p class="lead text-secondary">{{ item.intro }}</p>
+                <ul>
+                    {%- for info in item.more_info -%}
+                    <li>{{ info }}</li>
+                    {%- endfor -%}
+                </ul>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+
+    <div class="mb-4">
+        <h3 class="mb-2 fw-bold">לימודים כלליים</h3>
+        <ul class="list-unstyled">
+            {%- for item in site.education.general -%}
+            <li class="mb-4">
+                {% assign title = "" | split: "" %}
+                <h4 class="fw-semibold">{{ item.years }}: {{ title | push: item.title | push: item.institution_name | push: item.location | join: ", " }}</h4>
+                <ul>
+                    {%- for info in item.more_info -%}
+                    <li>{{ info }}</li>
+                    {%- endfor -%}
+                </ul>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+
+    <div class="mb-4">
+        <h3 class="mb-2 fw-bold">שפות</h3>
+        <ul class="list-unstyled">
+            {%- for lang in site.languages -%}
+            <li>{{ lang.name }}, {{ lang.level }}</li>
+            {%- endfor -%}
+        </ul>
+    </div>
+
+</div>
