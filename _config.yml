@@ -1,4 +1,4 @@
-title: Meir Elbaz's blog
+title: Meir Elbaz
 
 about_me: >-
   יש לי ניסיון רב בפיתוח Full Stack, גם מעבר לצד התכנותי של המערכת, בין בשלב ההקמה של התשתית ועד לעיצוב הממשק, בעבר כמפתח PHP וכיום כמפתח Python.
@@ -38,7 +38,7 @@ work_experience:
       - "פיתוח Backend ב: Django & DRF"
       - "פיתוח Frontend ב: React & Bootstrap"
       - "עבודה מול תשתיות בענן: AWS Lambda & DynamoDB"
-      - "תכנון ויצירת של אוטומציות: Jenkins"
+      - "תכנון ויצירה של אוטומציות: Jenkins"
       - הרמת סביבות עבודה עבור פיתוח ופרודקשן בעזרת Docker
 
 education:
