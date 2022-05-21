@@ -2,9 +2,21 @@
 layout: default
 ---
 
-<div class="border-bottom text-center">
-    <h1>קורות חיים</h1>
-</div>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="https://meirdev.wordpress.com" target="_blank">
+            <span><i class="bi bi-wordpress"></i></span>
+            <span>הבלוג</span>
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">אודות</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div class="container">
 
@@ -16,18 +28,22 @@ layout: default
         <p class="lead text-secondary">{{ site.about_me }}</p>
         <div class="d-flex justify-content-center align-items-center">
             <div class="mx-1">
-                <a href="https://github.com/meirdev" class="text-dark"><i class="bi bi-github"></i></a>
+                <a class="btn btn-sm btn-primary bg-gradient rounded-pill shadow border border-white" href="https://github.com/meirdev" target="_blank" role="button">
+                    <span class="contact">MeirDev</span>
+                    <span class="d-inline-block"><i class="bi bi-github"></i></span>
+                </a>
             </div>
             <div class="mx-1">
-                <a href="https://meirdev.wordpress.com" class="text-dark"><i class="bi bi-wordpress"></i></a>
+                <a class="btn btn-sm btn-primary bg-gradient rounded-pill shadow border border-white" href="mailto:maornet@gmail.com" role="button">
+                    <span class="contact">maornet@gmail.com</span>
+                    <span class="d-inline-block"><i class="bi bi-envelope"></i></span>
+                </a>
             </div>
-            <div class="mx-1 px-2 border rounded-pill">
-                <span class="contact">maornet@gmail.com</span>
-                <span class="d-inline-block"><i class="bi bi-envelope"></i></span>
-            </div>
-            <div class="mx-1 px-2 border rounded-pill">
-                <span>053-9630263</span>
-                <span class="d-inline-block"><i class="bi bi-telephone"></i></span>
+            <div class="mx-1">
+                <a class="btn btn-sm btn-primary bg-gradient rounded-pill shadow border border-white" href="tel:0539630263" role="button">
+                    <span class="contact">053-9630263</span>
+                    <span class="d-inline-block"><i class="bi bi-telephone"></i></span>
+                </a>
             </div>
         </div>
     </div>
