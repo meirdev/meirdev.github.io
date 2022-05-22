@@ -15,11 +15,13 @@ skills:
 
 year_of_birth: 1991
 
+full_name: מאיר אלבז
+
 phone: 0539630263
 
 mail: maornet@gmail.com
 
-github: https://github.com/meirdev/
+github_user: meirdev
 
 languages:
   - name: עברית
@@ -33,7 +35,7 @@ work_experience:
     location: ירושלים
     years: 2019-2022
     intro: >-
-      עבודה במחלקת הרכב האוטונומי, בנייה ותכנון של מערכות לתפעול הצי: ניטור הרכבים, עדכון גרסאות, ניהול תקלות , שליחת התראות, תחזוקה והרצה של גרסאות
+      עבודה במחלקת הרכב האוטונומי, בנייה ותכנון של מערכות לתפעול הצי: ניטור הרכבים, עדכון גרסאות, ניהול תקלות, שליחת התראות, תחזוקה והרצה של גרסאות
     more_info:
       - "פיתוח Backend ב: Django & DRF"
       - "פיתוח Frontend ב: React & Bootstrap"
