@@ -66,9 +66,7 @@ function Profile() {
       <Title name="Meir Elbaz" />
       <p className="text-gray-500 text-center font-light">
         <ul>
-          <li>I am a software developer.</li>
-          <li>I like to learn new things.</li>
-          <li>I try to share everything I learn with others.</li>
+          <li>I'm a software developer.</li>
         </ul>
       </p>
       <div className="flex gap-2">
