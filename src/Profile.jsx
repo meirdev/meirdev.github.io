@@ -72,7 +72,7 @@ function Profile() {
       <div className="flex gap-2">
         <Link
           title="Linkedin"
-          href="http://localhost:5173/www.linkedin.com/in/meir-elbaz-967081128"
+          href="http://linkedin.com/in/meir-elbaz-967081128"
           alt="Linkedin"
           icon={Linkedin}
         />
